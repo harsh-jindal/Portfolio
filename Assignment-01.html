@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Portfolio</title>
+        <style>
+            body {
+                margin:0;
+            }
+        .menu {
+            overflow:auto;
+            background-color:black;
+            opacity:0.8;
+            color:white;
+        
+            
+        }
+        .menu-left{
+            font-size: 2em;
+            float:left;
+            margin-left:8%;
+            display:inline-block;
+            padding:1% 0;
+            
+        }
+        .menu-right {
+            float:right;
+            margin-right:2%;
+            display:inline-block;
+            padding:1% 0;
+            overflow:auto;
+            vertical-align:center;
+        
+        }
+        .menu a{
+            text-decoration: none;
+            color:white;
+        }
+        .AboutMe {
+            margin-top:2.5%;
+            text-align: justify;
+        }
+
+        .first {
+            float:left;
+            display:inline-block;
+            
+            width:15%;
+        }
+         .first img {
+             width:100%;
+         }
+         .first h4 {
+             text-align:center;
+             margin:0;
+         }
+         .first h3{
+             text-align:center;
+             margin:5% 0;
+         }
+         .details {
+             text-align:center;
+             margin-bottom:6%;
+         }
+        .second {
+            display:inline-block;
+            float: left;
+            width:35%;
+            margin:0 2.5%;
+            font-size:19px;
+        }
+        .second h2{
+            margin:0;
+            margin-bottom:3%;
+        }
+
+        .inside {
+            background-color: lightgray;
+            display:inline-block;
+            width:100%;
+            font-size:17px;
+        }
+        .inside h3{
+            background-color: black;
+            color:white;
+            margin:0;
+        }
+        .inside p{
+            margin:0;
+        }
+        #last {
+            margin-right:15%;
+        }
+        #last h2{
+            display:inline-block;
+            margin:0;
+            margin-bottom:5%;
+        }
+
+        .workexp {
+            background-color: lightgray;
+           width:70%;
+            margin:0 15%;
+            margin-top:1.5%;
+            float:left;
+        }
+        .workexp h1 {
+            text-align: center;
+        }
+        .work{
+            display:inline-block;
+            width:45%;
+            float:left;
+            text-align:justify;
+            font-size:19px;
+           
+            margin-top:5%;
+        }
+        .left {
+            margin-right:10%;
+        }
+        .work h3{
+            margin:0;
+            display:inline-block;
+            float:left;
+        }
+        .work h5 {
+            margin:0;
+            display: inline-block;
+            float:right;
+        }
+        .inheading {
+            width:100%;
+            margin:0;
+            overflow:auto;
+        }
+        .form {
+            width:70%;
+            float:left;
+            margin:0 15%;
+            margin-top:2.5%;
+        }
+        .form h1{
+            text-align:center;
+        }
+ 
+        form div {
+            float:right;
+            width:85%;
+            margin-bottom:2%;
+        }
+
+        .main-form > input {
+            width:95%;
+            float:right;
+            border:none;
+            border-bottom:1px solid black;
+            font-size:17px;
+            
+        }
+        .main-form > textarea {
+            width:95%;
+            height:40px;
+            float:right;
+            border:none;
+            border-bottom:1px solid black;
+            font-size:17px;
+        }
+        .label {
+            width:15%;
+            float:left;
+            margin:0;
+            padding-left:10%;
+
+            font-weight:bold;
+            font-size:18px;
+
+        }
+        .button {
+            float:left;
+            margin-top:10px;
+            margin-bottom: 50px;
+           
+        }
+        .media-symbols1 {
+            display: inline-block;
+            background-image: url('/Users/harsh/Downloads/sprite-social-icons.jpg');
+            width:40px;
+            height:37px;
+            background-position: 0px -41px;
+            float:right;
+            margin-top:25px;
+            margin-right: 80px;
+        }
+        .media-symbols1:hover {
+            display: inline-block;
+            background-image: url('/Users/harsh/Downloads/sprite-social-icons.jpg');
+            width:40px;
+            height:35px;
+            background-position: 0px 0px;
+            float:right;
+            margin-right:80px;
+            margin-top:25px;
+        }
+
+       .media-symbols2 {
+            display: inline-block;
+            background-image: url('/Users/harsh/Downloads/sprite-social-icons.jpg');
+            width:39.5px;
+            height:38px;
+            background-position: -40px -40px;
+            float:right;
+            margin-top:25px;
+            margin-right: 10px;
+        }
+        .media-symbols2:hover {
+            display: inline-block;
+            background-image: url('/Users/harsh/Downloads/sprite-social-icons.jpg');
+            width:39.5px;
+            height:38px;
+            background-position: -40px 0px;
+            float:right;
+            margin-top:25px;
+        }
+
+        .media-symbols3 {
+            display: inline-block;
+            background-image: url('/Users/harsh/Downloads/sprite-social-icons.jpg');
+            width:40px;
+            height:37px;
+            background-position: -160px -40px;
+            float:right;
+            margin-top:25px;
+            margin-right: 10px;
+        }
+        .media-symbols3:hover {
+            display: inline-block;
+            background-image: url('/Users/harsh/Downloads/sprite-social-icons.jpg');
+            width:40px;
+            height:38px;
+            background-position: -160px 0px;
+            float:right;
+            margin-top:25px;
+        }
+
+        .twitter-timeline {
+            overflow: auto;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="menu">
+            <span class="menu-left">About Me</span>
+            <span class="menu-right" style="margin-right:12%;"><a href="#form">Get in touch</a></span>
+            <span class="menu-right"><a href="#workexp">Work experience</a></span>
+            <span class="menu-right"><a href="#aboutme">At a glance</a></span>
+        </div>
+
+        <div class="AboutMe" id="aboutme">
+            <div class="first" style="margin-left:15%; margin-bottom:13%; float:left;"><img src="../myclassdemos-css/before/10-background/img/abstract-bg.jpeg" style="border-radius:70%;"/>
+            <h3>PERSONAL INFO</h3>
+            <hr/>
+            <h4>NAME</h4>
+              <div class="details">HARSH JINDAL</div>
+            <h4>EMAIL</h4>
+               <div class="details">HARSH@GMAIL.COM</div>
+            <h4>PHONE NUMBER</h4>
+              <div class="details">+91 - 829 658 XXXX</div>
+            </div><div class="second"><h2>HARSH JINDAL</h2>
+                <hr/>
+                <span>B.TECH FIRST YEAR</span><br/><br/>
+                Aliquip dolore adipisicing commodo cupidatat ipsum magna consectetur aute et proident nisi commodo labore. Et ullamco voluptate do cupidatat veniam eu laboris adipisicing. Culpa dolore qui pariatur ipsum anim irure. Ex duis culpa ex est dolore. Commodo id consectetur sit labore ut anim aliqua sint excepteur magna ut Lorem qui consectetur.Pariatur nostrud proident eu excepteur nisi. Eu dolor nostrud esse ad sunt. Officia laborum adipisicing consequat veniam sit in sit do anim. Commodo Lorem amet dolor est. Id deserunt est officia tempor non incididunt id est eiusmod enim nostrud qui Lorem elit.
+                <br/><br/>
+                <div class="inside">
+                    <h3>WHO AM I?</h3>
+                    <p>Est laborum anim non eiusmod non in consequat. Commodo consequat id magna velit non tempor velit esse enim incididunt. Elit nostrud ea nostrud nisi nostrud esse. Excepteur eu occaecat nostrud est duis veniam adipisicing fugiat ea magna amet irure do sint. Culpa minim nisi labore ex deserunt consequat ipsum sunt consequat reprehenderit adipisicing voluptate. Laboris ex magna proident velit deserunt. Cillum ipsum non id in et incididunt ullamco nulla laboris minim duis aliqua.</p>
+                </div>
+                <div class="inside">
+                    <h3>WHAT AM I GOOD AT?</h3>
+                <p>Ea consectetur eiusmod sunt non labore sint aute. Voluptate aliqua excepteur ad minim reprehenderit aliquip cillum consectetur. In consectetur Lorem irure in pariatur veniam aliquip ex est enim veniam officia laboris ut. Aliqua sit qui proident enim non labore enim reprehenderit laboris in non do dolor pariatur.</p>
+                </div>
+                <div class="inside">
+                    <h3>NEED TO GET IN TOUCH?</h3>
+                <p>Elit Lorem nostrud tempor fugiat voluptate laborum dolor tempor. Labore mollit aute sit consequat exercitation officia tempor velit velit sunt do pariatur elit duis. Proident consectetur ut ut veniam nostrud qui magna dolor exercitation.</p>
+                </div>
+        
+            </div><div class="first" id ="last"><h2>LATEST TWEETS</h2>
+                <hr/>
+                <a class="twitter-timeline" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw" data-height="690">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+
+    <div style="background-color:lightgray; float:left; margin-top:4%;">
+        <div class="workexp" id="workexp">
+        <h1 style="border-bottom:1px solid black;">WORK EXPERIENCE</h1>
+        <div class="left work">
+            <div class="inheading"><h3>Proident dolor cillum</h3><h5>Dec' 17 - present</h5></div>
+            Enim deserunt consectetur aliqua labore ipsum non sit. Et eu consectetur cillum in proident ex deserunt exercitation consequat consectetur. Commodo quis ea laborum adipisicing excepteur sint duis aute reprehenderit cupidatat laborum do.</div>
+
+        <div class="right work">
+            <div class="inheading"><h3>Sunt esse tempor</h3><h5>Jan' 16 - Dec' 17</h5></div>
+            Consectetur amet veniam sunt id mollit. Elit non minim do non incididunt do exercitation elit nostrud minim anim sunt ex reprehenderit. Velit cillum minim ex veniam.Consequat aliquip ipsum ut nostrud nulla do anim. Eu labore aliquip magna in laboris laboris esse pariatur sunt adipisicing deserunt aute. Ea culpa nisi eu laborum est cillum officia ex est amet ullamco ea. Proident et excepteur non elit commodo ea elit minim in nostrud dolore tempor aliquip culpa.Aute dolore irure officia commodo veniam amet ipsum excepteur exercitation.Elit voluptate anim cillum irure anim tempor.Ipsum laboris ad nisi esse qui consequat proident.</div>
+       
+        <div class="left work" style="margin-bottom:5%;">
+            <div class="inheading"><h3>Proidet dlor cill</h3><h5>May'15 - Dec' 16</h5></div>
+            Ut pariatur consequat incididunt magna labore adipisicing eu excepteur reprehenderit non culpa. Aliquip non aliqua laboris ad nulla nulla id. Veniam enim laboris ut cillum est. Exercitation irure cillum dolore consectetur nulla id laborum sunt ullamco amet duis excepteur.</div>
+
+        <div class="right work" style="margin-bottom:5%;">
+            <div class="inheading"><h3>Esse aute tempor</h3><h5>Jan'15 - May' 15</h5></div>
+            Consequat in officia eu velit exercitation fugiat reprehenderit cillum duis occaecat est. Tempor proident proident ea ea. Veniam eu Lorem Lorem id nisi incididunt officia consequat.Consectetur nisi nostrud ea magna exercitation ex nisi culpa ipsum veniam incididunt aute. Proident fugiat velit elit veniam sint voluptate fugiat deserunt qui dolor ex nostrud. Sint commodo dolore sint aliqua nostrud.</div>
+        </div>
+    </div>
+
+    <div class="form" id="form">
+        <h1 style="border-bottom:1px solid black;">GET IN TOUCH WITH ME</h1>
+        
+        <form action="/Users/harsh/Downloads/skewcodesrc/01-html/class-demos/before/13-forms/process-form.html">
+        <div class="label"><label for="name">Name<span style="color:red;"> *</span></label></div>
+            <div class="main-form"><input type="text" id="name" value="harsh" required/></div>
+
+        <div class="label"><label for="email">Email<span style="color:red;"> *</span></label></div>
+            <div class="main-form"><input type="email" id="email" value="john@example.com"required/></div>
+
+        <div class="label"><label for="phone">Phone</label></div>
+        <div class="main-form"><input type="number" id="phone" /></div>
+
+    <div class="label"><label for="message">Message<span style="color:red;"> *</span></label></div>
+        <div class="main-form"><textarea id="message" required>Sample text</textarea></div>
+
+            <input type="reset" value="Reset" class="button" style="margin-left:20%;"/>
+            <input type="submit" value="Send Message" class="button" style="margin-left:1%;"/>
+
+        </form>
+    </div>
+
+    <div style="background-color:black; color:white; height:100px; float:left; border:1px solid black; width:100%; opacity:0.8;">
+            <a href="https://www.facebook.com/" target="_blank"><div class="media-symbols1" ></div></a>
+            <a href="https://twitter.com/login" target="_blank"><div class="media-symbols2"></div></a>
+            <a href="https://in.linkedin.com/" target="_blank"><div class="media-symbols3"></div></a>
+        <p style="text-align:center;padding-top:65px;margin:0;">&copy;2017 Harsh Jindal,All rights reserved</p>
+
+    </div>
+    
+    </body>
+
+</html>
